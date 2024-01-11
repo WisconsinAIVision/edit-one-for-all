@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<!-- <link rel="stylesheet" href="./static/css/bulma.min.css"> -->
+<link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+<link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+<!-- <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> -->
+<!-- <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
+<link rel="stylesheet" href="./static/css/index.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+<script src="./static/js/bulma-carousel.min.js"></script>
+<script src="./static/js/bulma-slider.min.js"></script>
+<script src="./static/js/index.js"></script>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+code {
+	display: block;
+  white-space: pre-wrap  
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+pre { font-family: monospace; }
+
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+	<title>Edit One for All: Interactive Batch Image Editing</title>
+	<meta property="og:image" content="./images/paper.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="Edit One for All: Interactive Batch Image Editing" />
+	<meta property="og:description" content="✏️ Interactive Batch Image Editing: Given a single user edited image, the goal is to automatically transfer that edit to new unseen images, so that all edited images end up with the same final state as the user edited image." />
+
+	<script async src=""></script> 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-75863369-6');
+	</script>
+	<link rel="icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_pencil-512.png"/>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+	<script type="text/javascript" src="script.js"></script>
+	<br>
+	<center>
+		<!-- <img class="round" style="width:500px" src="./images/CPM/cvpr.jpg"/> -->
+		<!-- <br/> -->
+		<br/>
+		<!-- <hr> -->
+		<span style="font-size:36px">Edit One for All: Interactive Batch Image Editing</span>
+		<br>
+		<!-- <hr> -->
+		<!-- </br> -->
+		<!-- <span style="font-size:22px; color:#011B56;">━ <a href="https://openaccess.thecvf.com/CVPR2021">CVPR 2021</a> ━</span> -->
+
+		<!-- <br></br> -->
+		<table align=center width=750px>
+			<table align=center width=750px>
+				<tr>
+					<td align=center width=150px>
+						<center>
+							<span style="font-size:22px"><a href="https://thaoshibe.github.io">Thao Nguyen</a></span>
+						</center>
+					</td>
+					<td align=center width=150px>
+						<center>
+							<span style="font-size:22px"><a href="https://utkarshojha.github.io/">Utkarsh Ojha</a></span>
+						</center>
+					</td>
+					<td align=center width=150px>
+						<center>
+							<span style="font-size:22px"><a href="https://yuheng-li.github.io/">Yuheng Li</a></span>
+						</center>
+					</td>
+					<td align=center width=150px>
+						<center>
+							<span style="font-size:22px"><a href="https://hliu.cc/">Haotian Liu</a></span>
+						</center>
+					</td>
+					<td align=center width=150px>
+						<center>
+							<span style="font-size:22px"><a href="https://pages.cs.wisc.edu/~yongjaelee/">Yong Jae Lee</a></span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<table align=center width=700px>
+				<tr>
+					<td align=center>
+						<center>
+							<span style="font-size:22px"><a href="https://www.cs.wisc.edu/">University of Wisconsin-Madison</a>
+								<!-- <img class="img" width=100px src="./images/vinai-logo.png"></img> -->
+							</span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<table align=center width=300px>
+				<tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:22px"><a href='https://arxiv.org/abs/2104.01867'>[arXiv]</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:22px"><a href='https://github.com/thaoshibe/edit-one-for-all'>[code]</a></span><br>
+						</center>
+					</td>
+<!-- 					<td align=center width=100px><a class="github-button" href="https://github.com/VinAIResearch/CPM" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star VinAIResearch/CPM on GitHub">Star</a>
+					</td> -->
+					<!-- <td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://github.com/VinAIResearch/CPM#datasets'>[Datasets]</a></span><br>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://colab.research.google.com/drive/1K9QVSHPJ8fx9X8yg6KnhE40PPlyW5iNp?usp=sharing'>[Colab]</a></span><br>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://drive.google.com/file/d/1heSDV3oQLvXU1mkDY8R4cPFz6v8Id6WO/view'>[Poster]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://drive.google.com/file/d/13jNcY6Egtn7WduFCxruDy6nJ2lYvJ7Ih/view'>[Slides]</a></span>
+						</center>
+					</td> -->
+					</td>
+				</tr>
+			</table>
+		</table>
+		<!-- <hr> -->
+	</center>
+	<br>
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:1000px" src="./images/single-vs-batch.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<table align=center width=850px>
+			<tr>
+				<td><i>
+					Single Image Editing vs. Batch Image Editing. (a) Prior work focuses on <b style="color:red;">single image editing</b>. (b) We focus on <b>batch image editing</b>, where the <i>user’s edit on a single image</i> is <b style="color:green;">automatically transferred to new images</b>, so that they all arrive at the <i>same final state regardless of their initial starting state</i>.
+				</i></td>
+			</tr>
+		</table>
+	</center>
+	<hr>
+	<table align=center width=850px>
+		<center><h1>Abstract</h1></center>
+		<tr>
+			<td>
+				In recent years, image editing has advanced remarkably. With increased human control, it is now possible to edit an image in a plethora of ways; from specifying in text what we want to change, to straight up dragging the contents of the image in an interactive point-based manner. <a style="color:blue;">However, most of the focus has remained on editing single images at a time. Whether and how we can simultaneously edit large batches of images has remained understudied</a>. With the goal of minimizing human supervision in the editing process, this paper presents a novel method for interactive batch image editing using StyleGAN as the medium. <a style="background-color:LightYellow;color:red">Given an edit specified by users in an example image (e.g., make the face frontal), our method can automatically transfer that edit to other test images, so that regardless of their initial state (pose), they all arrive at the same final state (e.g., all facing front)</a>. Extensive experiments demonstrate that edits performed using our method have similar visual quality to existing single-image-editing methods, while having more visual consistency and saving significant time and human effort.
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<hr>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <center><h1>Interactive Batch Image Editing</h1></center>
+      <p><center>As users adjust the editing strength in the example image (top row), all test images will be automatically updated. (Red bounding boxes indicate the edit according to the drag points).</center></p>
+      <div id="results-carousel-face" class="carousel results-carousel">
+        <div class="item item-puppet">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide1.png"
+                   alt="Dog."/>
+          </div>
+        </div>
+        <div class="item item-round_bird">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide2.png"
+                   alt="Anime."/>
+          </div>
+        </div>
+        <div class="item item-furby">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide3.png"
+                   alt="Landscape."/>
+          </div>
+        </div>
+        <div class="item item-bowl">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide4.png"
+                   alt="Human."/>
+          </div>
+        </div>
+        <div class="item item-child-drawing">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide5.png"
+                   alt="Face."/>
+          </div>
+        </div>
+        <div class="item item-red_teapot">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide6.png"
+                   alt="Face."/>
+          </div>
+        </div>
+        <div class="item item-fluffy">
+          <div class="carousel-content">
+            <img src="./images/interactive/Slide7.png"
+                   alt="Tiger."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 	<div class=figure>
+		<center>
+			<p><img class="round" style='width: 900px' src='./images/interactive/Slide1.png'>
+			<figcaption>As users adjust the editing strength in the example image (top row), all test images will be automatically updated. (Red bounding boxes indicate the edit according to the drag points).</figcaption>
+		</center>
+	</div> -->
+	<hr>
+ <center><h1>Framework</h1></center>
+		<center>
+			<p><img class="round" style='width: 900px' src='./images/framework.png'>
+			<figcaption>a) Setting.
+   (b) Naive Approach: The editing direction effective for an example may not generalize well to test images. (c) Optimizing Editing Direction: We optimize for a globally consistent direction that is effective for both example and test images. (d) Adjusting Editing Strength: Ensuring consistent final states requires adjusting the editing strength for each test image.</figcaption>
+		</center>
+<hr>
+
+<!-- <br>
+ -->
+ <center><h1>Multiple Edits</h1></center>
+		<center>
+			<p><img class="round" style='width: 900px' src='./images/multiple-edits.png'>
+			<figcaption>Multiple edits can be applied to example image before being transferred to test images.</figcaption>
+		</center>
+<hr>
+<!-- <br>
+ -->
+ <center><h1>Limitations</h1></center>
+		<center>
+			<p><img class="round" style='width: 900px' src='./images/limitation.png'>
+			<figcaption>(a) Failure Case: Our method may encounter challenges in capturing fine details (e.g., curling trunk of an elephant). (b) Example-Test Similarity: For optimal results, the example and test images should belong to the same semantic domain (e.g., both featuring long hair) to ensure correctly transferred edits. (c-d) Interesting Cases: Edits can be mistakenly interpreted, resulting in unexpected outcomes such as winking in the wrong eye (c) or unintentionally flipping the horse (d).</figcaption>
+		</center>
+<hr>
+	<table align=center width=800px>
+		<center><h1>Paper and Supplementary Material</h1></center>
+		<tr>
+			<td><a href="https://arxiv.org/abs/2104.01867"><img class="w3-border w3-padding" style="height:200px" src="./images/paper.png"/></a></td>
+			<td><span style="font-size:14pt">Thao Nguyen, Utkarsh Ojha, Yuheng Li, Haotian Liu, Yong Jae Lee<br>
+				<b>Edit One for All: Interactive Batch Image Editing</b><br>
+				In arXiv, 2024.<br>
+				
+				[<a href="https://arxiv.org/abs/2104.01867">paper</a>] [<a href="https://drive.google.com/file/d/1TXYTvGoVlRzS7jodsYcRuh9EaK_UUeII/view?usp=sharing">supplementary</a>] [<a href="https://drive.google.com/file/d/1heSDV3oQLvXU1mkDY8R4cPFz6v8Id6WO/view?usp=sharing">poster</a>]<br>
+			</td>
+		</tr>
+	</table>
+	<table align=center width=640px>
+		<tr style="font-size:14px"><td><i>➥ <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Nguyen_Lipstick_Aint_Enough_Beyond_Color_Matching_for_In-the-Wild_Makeup_Transfer_CVPR_2021_paper.html">BibTeX</a>:</i></td></tr>
+		<tr style="background-color:#E2E2E2;font-family:'monospace';font-size:14px;">
+			<td>
+				<!-- <br> -->
+<!-- 				@inproceedings{m_Nguyen-etal-CVPR21,<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp author = {Thao Nguyen and Anh Tran and Minh Hoai},<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp title = {Lipstick ain't enough: Beyond Color Matching for In-the-Wild Makeup Transfer},<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp year = {2021},<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp booktitle = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition (CVPR)}<br>
+				&nbsp&nbsp&nbsp} -->
+		<br></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<hr>
+
+<!-- <hr> -->
+<!-- <br> -->
+	<table align=center width=900px>
+		<tr>
+			<td width=400px>
+				<left>
+					<center><h1>Acknowledgements</h1></center>
+					Website template was borrowed from <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a> and <a href="https://nerfies.github.io/">Nerfies</a>; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a> and <a href="https://github.com/nerfies/nerfies.github.io">here</a>. Thank you (.❛ ᴗ ❛.).
+				</left>
+			</td>
+		</tr>
+	</table>
+	
+    <center>
+    <a href="javascript:toggleblock('notice')" style="text-align:center;font-size:70%;color:#808080">▶ thaoshibe.github.io's clustrmaps 🌎</a>.
+    <div id="notice" style="display:none; color:#dedede; font-size:.5em;">
+      <p>
+        <a href="https://clustrmaps.com/site/1by4o"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=6iqgMPzQWjYWL-a-piqs9DZPwlTOlktnDhC_V_xVJCI&cl=ffffff" /></a>
+      </p>
+    </div>
+  </center>
+<br>
+</body>
+</html>
