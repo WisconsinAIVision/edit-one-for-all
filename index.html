@@ -191,7 +191,7 @@ pre { font-family: monospace; }
 		<!-- <br/> -->
 		<br/>
 		<!-- <hr> -->
-		<span style="font-size:36px">Edit One for All: Interactive Batch Image Editing</span>
+		<span style="font-size:36px">✏️ Edit One for All: Interactive Batch Image Editing</span>
 		<br>
 		<!-- <hr> -->
 		<!-- </br> -->
@@ -241,11 +241,11 @@ pre { font-family: monospace; }
 			</table>
 			<table align=center width=300px>
 				<tr>
-					<td align=center width=100px>
+<!-- 					<td align=center width=100px>
 						<center>
 							<span style="font-size:22px"><a href='https://arxiv.org/abs/2104.01867'>[arXiv]</a></span>
 						</center>
-					</td>
+					</td> -->
 					<td align=center width=100px>
 						<center>
 							<span style="font-size:22px"><a href='https://github.com/thaoshibe/edit-one-for-all'>[code]</a></span><br>
@@ -281,22 +281,8 @@ pre { font-family: monospace; }
 	</center>
 	<br>
 	<center>
-		<table align=center width=850px>
-			<tr>
-				<td width=260px>
-					<center>
-						<img class="round" style="width:1000px" src="./images/single-vs-batch.png"/>
-					</center>
-				</td>
-			</tr>
-		</table>
-		<table align=center width=850px>
-			<tr>
-				<td><i>
-					Single Image Editing vs. Batch Image Editing. (a) Prior work focuses on <b style="color:red;">single image editing</b>. (b) We focus on <b>batch image editing</b>, where the <i>user’s edit on a single image</i> is <b style="color:green;">automatically transferred to new images</b>, so that they all arrive at the <i>same final state regardless of their initial starting state</i>.
-				</i></td>
-			</tr>
-		</table>
+	<img class="round" style="width:500px" src="./images/teaser-gif.gif"/>
+	<p style="max-width:750px;">Given an edit specified by users in <a style="color:red;">an example image</a> (e.g., dog pose),<br>Our method can <a style="color:green;"><b>automatically</b> transfer that edit to other test images</a> (e.g., all dog same pose).</p>
 	</center>
 	<hr>
 	<table align=center width=850px>
@@ -308,7 +294,26 @@ pre { font-family: monospace; }
 		</tr>
 	</table>
 	<br>
-
+	<center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:1000px" src="./images/single-vs-batch.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<table align=center width=850px>
+			<tr>
+				<td>
+					Single Image Editing vs. Batch Image Editing.
+					(a) Prior work focuses on <b style="color:red;">single image editing</b>.<br>
+					(b) We focus on <b>batch image editing</b>, where the <i>user’s edit on a single image</i> is <b style="color:green;">automatically transferred to new images</b>, so that they all arrive at the <i>same final state regardless of their initial starting state</i>.
+				</td>
+			</tr>
+		</table>
+	</center>
 	<hr>
 
 <section class="hero is-light is-small">
@@ -382,7 +387,7 @@ pre { font-family: monospace; }
  -->
  <center><h1>Multiple Edits</h1></center>
 		<center>
-			<p><img class="round" style='width: 900px' src='./images/multiple-edits.png'>
+			<p><img class="round" style='width: 1000px' src='./images/multiple-edits.png'>
 			<figcaption>Multiple edits can be applied to example image before being transferred to test images.</figcaption>
 		</center>
 <hr>
@@ -390,11 +395,13 @@ pre { font-family: monospace; }
  -->
  <center><h1>Limitations</h1></center>
 		<center>
-			<p><img class="round" style='width: 900px' src='./images/limitation.png'>
+			<p><img class="round" style='width: 1000px' src='./images/limitation.png'>
 			<figcaption>(a) Failure Case: Our method may encounter challenges in capturing fine details (e.g., curling trunk of an elephant). (b) Example-Test Similarity: For optimal results, the example and test images should belong to the same semantic domain (e.g., both featuring long hair) to ensure correctly transferred edits. (c-d) Interesting Cases: Edits can be mistakenly interpreted, resulting in unexpected outcomes such as winking in the wrong eye (c) or unintentionally flipping the horse (d).</figcaption>
 		</center>
+	<!-- <br> -->
+	<!-- <br> -->
 <hr>
-	<table align=center width=800px>
+<!-- 	<table align=center width=800px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
 			<td><a href="https://arxiv.org/abs/2104.01867"><img class="w3-border w3-padding" style="height:200px" src="./images/paper.png"/></a></td>
@@ -402,27 +409,28 @@ pre { font-family: monospace; }
 				<b>Edit One for All: Interactive Batch Image Editing</b><br>
 				In arXiv, 2024.<br>
 				
-				[<a href="https://arxiv.org/abs/2104.01867">paper</a>] [<a href="https://drive.google.com/file/d/1TXYTvGoVlRzS7jodsYcRuh9EaK_UUeII/view?usp=sharing">supplementary</a>] [<a href="https://drive.google.com/file/d/1heSDV3oQLvXU1mkDY8R4cPFz6v8Id6WO/view?usp=sharing">poster</a>]<br>
+				[<a href="https://arxiv.org/abs/2104.01867">paper</a>] -->
+				<!-- [<a href="https://drive.google.com/file/d/1TXYTvGoVlRzS7jodsYcRuh9EaK_UUeII/view?usp=sharing">supplementary</a>] [<a href="https://drive.google.com/file/d/1heSDV3oQLvXU1mkDY8R4cPFz6v8Id6WO/view?usp=sharing">poster</a>] -->
+<!-- 				<br>
 			</td>
 		</tr>
-	</table>
-	<table align=center width=640px>
-		<tr style="font-size:14px"><td><i>➥ <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Nguyen_Lipstick_Aint_Enough_Beyond_Color_Matching_for_In-the-Wild_Makeup_Transfer_CVPR_2021_paper.html">BibTeX</a>:</i></td></tr>
+	</table> -->
+<!-- 	<table align=center width=640px>
+		<tr style="font-size:14px"><td><i>➥ BibTeX:</i></td></tr>
 		<tr style="background-color:#E2E2E2;font-family:'monospace';font-size:14px;">
 			<td>
-				<!-- <br> -->
+			<br> -->
 <!-- 				@inproceedings{m_Nguyen-etal-CVPR21,<br>
 				&nbsp&nbsp&nbsp&nbsp&nbsp author = {Thao Nguyen and Anh Tran and Minh Hoai},<br>
 				&nbsp&nbsp&nbsp&nbsp&nbsp title = {Lipstick ain't enough: Beyond Color Matching for In-the-Wild Makeup Transfer},<br>
 				&nbsp&nbsp&nbsp&nbsp&nbsp year = {2021},<br>
 				&nbsp&nbsp&nbsp&nbsp&nbsp booktitle = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition (CVPR)}<br>
 				&nbsp&nbsp&nbsp} -->
-		<br></td>
+<!-- 		<br></td>
 		</tr>
-	</table>
-	<br>
-	<br>
-	<hr>
+	</table> -->
+
+	<!-- <hr> -->
 
 <!-- <hr> -->
 <!-- <br> -->
