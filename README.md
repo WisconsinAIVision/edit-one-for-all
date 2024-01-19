@@ -46,4 +46,5 @@ As users adjust the editing strength in the example image (top row), all test im
 ### Related Works
 
 - [Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold](https://vcai.mpi-inf.mpg.de/projects/DragGAN/) (SIGGRAPH 2023)
+- [Analyzing and Improving the Image Quality of StyleGAN](https://openaccess.thecvf.com/content_CVPR_2020/papers/Karras_Analyzing_and_Improving_the_Image_Quality_of_StyleGAN_CVPR_2020_paper.pdf) (CVPR 2020)
 - [LARGE: Latent-Based Regression through GAN Semantics](https://yotamnitzan.github.io/LARGE/) (CVPR 2022)
