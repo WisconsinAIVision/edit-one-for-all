@@ -1,0 +1,27 @@
+name: stylegan3
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - python >= 3.8
+  - pip
+  - numpy>=1.25
+  - click>=8.0
+  - pillow=9.4.0
+  - scipy=1.11.1
+  - pytorch>=2.0.1
+  - torchvision>=0.15.2
+  - cudatoolkit=11.1
+  - requests=2.26.0
+  - tqdm=4.62.2
+  - ninja=1.10.2
+  - matplotlib=3.4.2
+  - imageio=2.9.0
+  - pip:
+    - imgui==2.0.0
+    - glfw==2.6.1
+    - gradio==3.35.2
+    - pyopengl==3.1.5
+    - imageio-ffmpeg==0.4.3
+    # pyspng is currently broken on MacOS (see https://github.com/nurpax/pyspng/pull/6 for instance)
+    - pyspng-seunglab

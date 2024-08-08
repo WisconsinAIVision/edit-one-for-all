@@ -13,7 +13,39 @@ By [Thao Nguyen](https://thaoshibe.github.io/), [Utkarsh Ojha](https://utkarshoj
 
 ---
 
-### Interactive Batch Image Editing
+### Getting Started
+
+This repo is heavily built upon [DragGAN](https://github.com/XingangPan/DragGAN). Please refer to the original repo for more details about installation/download checkpoints.
+
+```
+#- clone this repo
+git clone https://github.com/WisconsinAIVision/edit-one-for-all.git
+cd edit-one-for-all
+
+#- install packes
+conda env create -f environment.yml
+conda activate stylegan3
+pip install -r requirements.txt
+
+#- download checkpoints
+python scripts/download_model.py
+
+```
+
+If you want to try other pretrained model, put them under `./checkpoints/` folder.
+
+
+### Usage
+
+Launch the gradio demo by:
+
+```
+python my_gradio.py --port 7681
+```
+
+Then, open your browser and go to `http://localhost:7681/` to interact with the demo.
+
+### Galleries
 
 As users adjust the editing strength in the example image (top row), all test images will be automatically updated. (Red bounding boxes indicate the edit according to the drag points).
 
@@ -41,14 +73,14 @@ As users adjust the editing strength in the example image (top row), all test im
 
 ![](./images/interactive/Slide7.png "teaser")
 
-🚧 Under construction... (Im going to commit code around March...)
-
 
 ### Related Works
 
 - [Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold](https://vcai.mpi-inf.mpg.de/projects/DragGAN/) (SIGGRAPH 2023)
 - [Analyzing and Improving the Image Quality of StyleGAN](https://openaccess.thecvf.com/content_CVPR_2020/papers/Karras_Analyzing_and_Improving_the_Image_Quality_of_StyleGAN_CVPR_2020_paper.pdf) (CVPR 2020)
 - [LARGE: Latent-Based Regression through GAN Semantics](https://yotamnitzan.github.io/LARGE/) (CVPR 2022)
+
+Special thanks to DragGAN for making the code available!
 
 ### BibTeX
 
